@@ -4,10 +4,10 @@ import pickle
 from PIL import Image
 
 st.title("Loan Approval Prediction")
-img = Image.open("C:\\Users\\personal\\Desktop\\Machine Learning\\household image.png")
+img = Image.open("household image.png")
 st.image(img)
 #load the model
-model = pickle.load(open("C:\\Users\\personal\\Desktop\\Machine Learning\\model.pkl",'rb'))
+model = pickle.load(open("model.pkl",'rb'))
 # Input fields
 gender = st.selectbox('Gender', ['Male', 'Female'])
 married = st.selectbox('Married', ['Yes', 'No'])
